@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Что такое слаботочные системы и какие бывают | СБ-Групп</title>
+<meta name="description" content="Что такое слаботочные системы, чем отличаются от силовых, из чего состоят и где применяются. Виды слаботочных систем.">
+<style>
+:root{--p:#1257d6;--ph:#0d47b3;--pl:#e8efff;--a:#f59e0b;--ah:#d97706;--d:#0f172a;--t:#334155;--m:#64748b;--b:#e2e8f0;--bg:#f8fafc;--r:12px;--s1:0 1px 3px rgba(15,23,42,.08);--s2:0 4px 16px rgba(15,23,42,.08);--s3:0 10px 40px rgba(15,23,42,.12);--c:1200px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--t);background:#fff;line-height:1.6;padding-top:72px}
+h1,h2,h3,h4{color:var(--d);line-height:1.25;font-weight:700}
+h1{font-size:clamp(28px,4vw,44px);margin-bottom:16px}h2{font-size:clamp(24px,3vw,34px);margin-bottom:12px}h3{font-size:20px;margin-bottom:8px}
+p{margin-bottom:12px}a{color:inherit;text-decoration:none;transition:color .2s}ul{list-style:none}
+.container{max-width:var(--c);margin:0 auto;padding:0 20px}
+.section{padding:72px 0}.section--alt{background:var(--bg)}
+.section__head{max-width:760px;margin-bottom:40px}.section__head p{color:var(--m);font-size:17px}
+.text-center{text-align:center}
+.header{position:fixed;top:0;left:0;right:0;background:#fff;box-shadow:var(--s1);z-index:1000}
+.header__inner{display:flex;align-items:center;gap:24px;height:72px;max-width:var(--c);margin:0 auto;padding:0 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--d);flex-shrink:0}
+.logo__mark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--p),var(--ph));display:grid;place-items:center;color:#fff;font-size:16px;font-weight:800}
+.logo__text small{display:block;font-size:11px;color:var(--m);font-weight:500;letter-spacing:.3px;text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:2px;flex:1}
+.nav__link{padding:8px 12px;border-radius:8px;font-weight:500;font-size:14px;color:var(--t);white-space:nowrap;cursor:pointer}
+.nav__link:hover,.nav__link.active{background:var(--pl);color:var(--p)}
+.nav__dropdown{position:relative}.nav__dropdown::after{content:"";position:absolute;top:100%;left:0;right:0;height:8px}
+.nav__dropdown-menu{position:absolute;top:calc(100% + 6px);left:0;min-width:280px;background:#fff;border-radius:12px;box-shadow:var(--s3);padding:8px;display:none;flex-direction:column;gap:2px;border:1px solid var(--b)}
+.nav__dropdown:hover .nav__dropdown-menu{display:flex}
+.nav__dropdown-menu a{padding:9px 12px;border-radius:8px;font-size:14px;color:var(--t)}
+.nav__dropdown-menu a:hover{background:var(--pl);color:var(--p)}
+.header__actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.header__phone{font-weight:700;color:var(--d);font-size:15px;white-space:nowrap}.header__phone:hover{color:var(--p)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:600;font-size:14px;border:none;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:inherit}
+.btn--primary{background:var(--p);color:#fff}.btn--primary:hover{background:var(--ph)}
+.btn--accent{background:var(--a);color:#fff}.btn--accent:hover{background:var(--ah)}
+.btn--ghost{background:#fff;color:var(--p);border:1.5px solid var(--p)}.btn--ghost:hover{background:var(--pl)}
+.btn--lg{padding:14px 26px;font-size:15px}
+.burger{display:none;width:44px;height:44px;border:none;background:var(--bg);border-radius:10px;cursor:pointer;position:relative;flex-shrink:0}
+.burger span,.burger::before,.burger::after{content:"";position:absolute;left:12px;right:12px;height:2px;background:var(--d);border-radius:2px;transition:all .3s}
+.burger::before{top:14px}.burger span{top:21px}.burger::after{top:28px}
+.burger.open::before{top:21px;transform:rotate(45deg)}.burger.open span{opacity:0}.burger.open::after{top:21px;transform:rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;padding:20px;overflow-y:auto;z-index:999}
+.mobile-nav.open{display:block}
+.mobile-nav a,.mobile-nav .nav__toggle{display:block;padding:14px 12px;font-size:16px;font-weight:500;border-radius:10px;color:var(--d);cursor:pointer}
+.mobile-nav a:hover,.mobile-nav .nav__toggle:hover{background:var(--pl);color:var(--p)}
+.mobile-nav__sub{display:none;padding-left:16px;margin-bottom:8px}.mobile-nav__sub.open{display:block}
+.mobile-nav__sub a{font-size:14px;color:var(--m);padding:10px 12px}
+.mobile-nav .btn{margin-top:16px;width:100%}
+.grid{display:grid;gap:20px}.grid--2{grid-template-columns:repeat(2,1fr)}.grid--3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--b);border-radius:var(--r);padding:24px;transition:all .25s}
+.card:hover{box-shadow:var(--s2);transform:translateY(-2px);border-color:#cbd5e1}
+.card__icon{width:48px;height:48px;border-radius:12px;background:var(--pl);color:var(--p);display:grid;place-items:center;font-size:22px;margin-bottom:16px;font-weight:700}
+.card__title{font-size:17px;font-weight:700;color:var(--d);margin-bottom:8px}
+.card__desc{font-size:14px;color:var(--m);margin-bottom:16px}
+.card__link{color:var(--p);font-weight:600;font-size:13px}
+.page-header{background:var(--bg);padding:48px 0;border-bottom:1px solid var(--b)}
+.page-header h1{margin-bottom:8px}.page-header p{color:var(--m);font-size:16px;max-width:720px}
+.crumbs{font-size:13px;color:var(--m);padding:20px 0 0}.crumbs a:hover{color:var(--p)}.crumbs span{margin:0 6px}
+.list li{padding:6px 0}
+.cta-block{background:linear-gradient(135deg,var(--p),var(--ph));border-radius:16px;padding:48px;color:#fff;text-align:center}
+.cta-block h2{color:#fff;margin-bottom:12px}.cta-block p{color:rgba(255,255,255,.85);margin-bottom:28px;font-size:16px}
+.footer{background:var(--d);color:rgba(255,255,255,.7);padding:56px 0 24px}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.footer h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:16px;text-transform:uppercase;letter-spacing:.5px}
+.footer .logo{color:#fff;margin-bottom:14px}.footer .logo__text small{color:rgba(255,255,255,.5)}
+.footer p{font-size:14px;margin:0}.footer ul li{margin-bottom:10px;font-size:14px}.footer a:hover{color:var(--a)}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.footer__bottom a{text-decoration:underline}
+.fab{position:fixed;bottom:24px;right:24px;z-index:900;background:var(--a);color:#fff;padding:14px 22px;border-radius:50px;font-weight:700;font-size:14px;box-shadow:0 8px 24px rgba(245,158,11,.4);display:flex;align-items:center;gap:8px;transition:all .2s}
+.fab:hover{background:var(--ah);transform:translateY(-2px);color:#fff}
+@media (max-width:1024px){.nav,.header__phone,.header__actions .btn{display:none}.burger{display:block}.grid--3{grid-template-columns:repeat(2,1fr)}.footer__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.section{padding:48px 0}.grid--2,.grid--3{grid-template-columns:1fr}.footer__grid{grid-template-columns:1fr}.cta-block{padding:32px 24px}.fab{right:16px;bottom:16px;padding:12px 18px;font-size:13px}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo"><div class="logo__mark">СБ</div><div class="logo__text">СБ-Групп<small>Слаботочные системы</small></div></a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Главная</a>
+      <div class="nav__dropdown"><span class="nav__link active">Слаботочные системы ▾</span>
+        <div class="nav__dropdown-menu">
+          <a href="slabotochnye.html">Что такое слаботочные системы</a>
+          <a href="slabotochnye.html#vidy">Какие бывают слаботочные системы</a>
+          <a href="uslugi.html">Каталог услуг</a>
+        </div>
+      </div>
+      <a href="o-kompanii.html" class="nav__link">О компании</a>
+      <a href="o-kompanii.html#pochemu" class="nav__link">Почему мы</a>
+      <a href="kontakty.html" class="nav__link">Контакты</a>
+      <a href="obratnaya-svyaz.html" class="nav__link">Обратная связь</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+      <a href="obratnaya-svyaz.html" class="btn btn--primary">Получить консультацию</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Главная</a>
+  <div class="nav__toggle" data-toggle>Слаботочные системы ▾</div>
+  <div class="mobile-nav__sub"><a href="slabotochnye.html">Что такое</a><a href="slabotochnye.html#vidy">Какие бывают</a><a href="uslugi.html">Каталог услуг</a></div>
+  <a href="o-kompanii.html">О компании</a><a href="o-kompanii.html#pochemu">Почему мы</a><a href="kontakty.html">Контакты</a><a href="obratnaya-svyaz.html">Обратная связь</a>
+  <a href="obratnaya-svyaz.html" class="btn btn--accent btn--lg">Получить консультацию</a>
+</div>
+
+<main>
+<div class="page-header"><div class="container">
+  <div class="crumbs"><a href="index.html">Главная</a><span>/</span>Слаботочные системы</div>
+  <h1>Что такое слаботочные системы</h1>
+  <p>Простое объяснение от наших инженеров</p>
+</div></div>
+
+<section class="section"><div class="container">
+  <p>Слаботочные системы — это инженерные сети и оборудование, которые работают при низком напряжении (обычно до 24–48 В) и обеспечивают безопасность, связь, доступ и управление объектом. К ним относятся видеонаблюдение, контроль доступа, пожарная и охранная сигнализация, структурированные кабельные сети, домофония, оповещение и диспетчеризация.</p>
+
+  <h2 style="margin-top:32px">Чем отличаются от силовых сетей</h2>
+  <ul class="list" style="margin-top:12px">
+    <li>• Работают при низком напряжении</li>
+    <li>• Не предназначены для передачи большой мощности</li>
+    <li>• Ориентированы на передачу сигналов, данных и управление</li>
+    <li>• Прокладываются отдельно от силовых линий</li>
+    <li>• Требуют отдельного проекта и монтажа</li>
+  </ul>
+
+  <h2 style="margin-top:32px">Из чего состоят</h2>
+  <ul class="list" style="margin-top:12px">
+    <li>• Кабельные линии</li>
+    <li>• Оборудование (камеры, датчики, контроллеры, панели)</li>
+    <li>• Источники питания</li>
+    <li>• Коммутационное оборудование</li>
+    <li>• Серверная и программная часть</li>
+    <li>• Рабочие места операторов</li>
+  </ul>
+
+  <h2 style="margin-top:32px">Где применяются</h2>
+  <ul class="list" style="margin-top:12px">
+    <li>• Офисы и бизнес-центры</li>
+    <li>• Магазины и торговые центры</li>
+    <li>• Склады и производства</li>
+    <li>• Коттеджи и частные дома</li>
+    <li>• Школы, больницы, госучреждения</li>
+  </ul>
+</div></section>
+
+<section class="section section--alt" id="vidy"><div class="container">
+  <div class="section__head"><h2>Какие бывают слаботочные системы</h2><p>8 основных видов, которые мы проектируем и монтируем</p></div>
+  <div class="grid grid--3">
+    <div class="card"><div class="card__icon">📹</div><div class="card__title">Видеонаблюдение</div><p class="card__desc">Контроль территории и помещений, запись и удалённый доступ.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">🔑</div><div class="card__title">СКУД</div><p class="card__desc">Контроль и управление доступом сотрудников и посетителей.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">🖧</div><div class="card__title">СКС</div><p class="card__desc">Кабельные сети для интернета, телефонии и передачи данных.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">🚨</div><div class="card__title">ОПС</div><p class="card__desc">Обнаружение пожара и проникновения, вывод на пульт.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">📢</div><div class="card__title">СОУЭ</div><p class="card__desc">Звуковое и световое оповещение, управление эвакуацией.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">🔔</div><div class="card__title">Домофония</div><p class="card__desc">Связь и контроль входа в дом или офис.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">📶</div><div class="card__title">Локальные сети и Wi-Fi</div><p class="card__desc">Интернет и сеть для офиса, склада, магазина и кафе.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+    <div class="card"><div class="card__icon">⚙️</div><div class="card__title">Диспетчеризация</div><p class="card__desc">Мониторинг и удалённое управление инженерными системами.</p><a href="uslugi.html" class="card__link">Подробнее →</a></div>
+  </div>
+  <div class="text-center" style="margin-top:32px"><a href="uslugi.html" class="btn btn--primary btn--lg">Перейти в каталог услуг</a></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="cta-block">
+    <h2>Нужна помощь с выбором системы?</h2>
+    <p>Оставьте заявку — инженер подберёт решение под ваш объект.</p>
+    <a href="obratnaya-svyaz.html" class="btn btn--accent btn--lg">Получить консультацию</a>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div><div class="logo"><div class="logo__mark">СБ</div><div class="logo__text">СБ-Групп<small>Слаботочные системы</small></div></div><p>Проектирование, монтаж и обслуживание слаботочных систем для бизнеса и частных объектов с 2014 года.</p></div>
+    <div><h4>Меню</h4><ul><li><a href="index.html">Главная</a></li><li><a href="slabotochnye.html">Слаботочные системы</a></li><li><a href="o-kompanii.html">О компании</a></li><li><a href="o-kompanii.html#pochemu">Почему мы</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+    <div><h4>Услуги</h4><ul><li><a href="uslugi.html">Видеонаблюдение</a></li><li><a href="uslugi.html">СКУД</a></li><li><a href="uslugi.html">СКС</a></li><li><a href="uslugi.html">ОПС</a></li><li><a href="uslugi.html">Домофония</a></li></ul></div>
+    <div><h4>Контакты</h4><ul><li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li><li><a href="mailto:info@sb-group.ru">info@sb-group.ru</a></li><li>г. Москва, ул. Примерная, 10</li><li>пн–пт 9:00–19:00</li></ul></div>
+  </div>
+  <div class="footer__bottom"><span>© 2025 СБ-Групп. Все права защищены.</span><a href="kontakty.html#policy">Политика конфиденциальности</a></div>
+</div></footer>
+<a href="obratnaya-svyaz.html" class="fab">📞 Заказать звонок</a>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mobileNav').classList.toggle('open');document.body.style.overflow=this.classList.contains('open')?'hidden':''});
+document.querySelectorAll('.mobile-nav [data-toggle]').forEach(t=>t.addEventListener('click',()=>{const n=t.nextElementSibling;if(n)n.classList.toggle('open')}));
+</script>
+</body>
+</html>

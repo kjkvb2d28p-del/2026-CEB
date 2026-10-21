@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О компании СБ-Групп — слаботочные системы с 2014 года</title>
+<meta name="description" content="СБ-Групп — проектирование, монтаж и обслуживание слаботочных систем. 10+ лет, 450+ объектов, гарантия 24 месяца.">
+<style>
+:root{--p:#1257d6;--ph:#0d47b3;--pl:#e8efff;--a:#f59e0b;--ah:#d97706;--d:#0f172a;--t:#334155;--m:#64748b;--b:#e2e8f0;--bg:#f8fafc;--r:12px;--s1:0 1px 3px rgba(15,23,42,.08);--s2:0 4px 16px rgba(15,23,42,.08);--s3:0 10px 40px rgba(15,23,42,.12);--c:1200px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--t);background:#fff;line-height:1.6;padding-top:72px}
+h1,h2,h3,h4{color:var(--d);line-height:1.25;font-weight:700}
+h1{font-size:clamp(28px,4vw,44px);margin-bottom:16px}h2{font-size:clamp(24px,3vw,34px);margin-bottom:12px}h3{font-size:20px;margin-bottom:8px}
+p{margin-bottom:12px}a{color:inherit;text-decoration:none;transition:color .2s}ul{list-style:none}
+.container{max-width:var(--c);margin:0 auto;padding:0 20px}
+.section{padding:72px 0}.section--alt{background:var(--bg)}
+.section__head{max-width:760px;margin-bottom:40px}.section__head p{color:var(--m);font-size:17px}
+.text-center{text-align:center}
+.header{position:fixed;top:0;left:0;right:0;background:#fff;box-shadow:var(--s1);z-index:1000}
+.header__inner{display:flex;align-items:center;gap:24px;height:72px;max-width:var(--c);margin:0 auto;padding:0 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--d);flex-shrink:0}
+.logo__mark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--p),var(--ph));display:grid;place-items:center;color:#fff;font-size:16px;font-weight:800}
+.logo__text small{display:block;font-size:11px;color:var(--m);font-weight:500;letter-spacing:.3px;text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:2px;flex:1}
+.nav__link{padding:8px 12px;border-radius:8px;font-weight:500;font-size:14px;color:var(--t);white-space:nowrap;cursor:pointer}
+.nav__link:hover,.nav__link.active{background:var(--pl);color:var(--p)}
+.nav__dropdown{position:relative}.nav__dropdown::after{content:"";position:absolute;top:100%;left:0;right:0;height:8px}
+.nav__dropdown-menu{position:absolute;top:calc(100% + 6px);left:0;min-width:280px;background:#fff;border-radius:12px;box-shadow:var(--s3);padding:8px;display:none;flex-direction:column;gap:2px;border:1px solid var(--b)}
+.nav__dropdown:hover .nav__dropdown-menu{display:flex}
+.nav__dropdown-menu a{padding:9px 12px;border-radius:8px;font-size:14px;color:var(--t)}
+.nav__dropdown-menu a:hover{background:var(--pl);color:var(--p)}
+.header__actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.header__phone{font-weight:700;color:var(--d);font-size:15px;white-space:nowrap}.header__phone:hover{color:var(--p)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:600;font-size:14px;border:none;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:inherit}
+.btn--primary{background:var(--p);color:#fff}.btn--primary:hover{background:var(--ph)}
+.btn--accent{background:var(--a);color:#fff}.btn--accent:hover{background:var(--ah)}
+.btn--lg{padding:14px 26px;font-size:15px}
+.burger{display:none;width:44px;height:44px;border:none;background:var(--bg);border-radius:10px;cursor:pointer;position:relative;flex-shrink:0}
+.burger span,.burger::before,.burger::after{content:"";position:absolute;left:12px;right:12px;height:2px;background:var(--d);border-radius:2px;transition:all .3s}
+.burger::before{top:14px}.burger span{top:21px}.burger::after{top:28px}
+.burger.open::before{top:21px;transform:rotate(45deg)}.burger.open span{opacity:0}.burger.open::after{top:21px;transform:rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;padding:20px;overflow-y:auto;z-index:999}
+.mobile-nav.open{display:block}
+.mobile-nav a,.mobile-nav .nav__toggle{display:block;padding:14px 12px;font-size:16px;font-weight:500;border-radius:10px;color:var(--d);cursor:pointer}
+.mobile-nav a:hover,.mobile-nav .nav__toggle:hover{background:var(--pl);color:var(--p)}
+.mobile-nav__sub{display:none;padding-left:16px;margin-bottom:8px}.mobile-nav__sub.open{display:block}
+.mobile-nav__sub a{font-size:14px;color:var(--m);padding:10px 12px}
+.mobile-nav .btn{margin-top:16px;width:100%}
+.grid{display:grid;gap:20px}.grid--2{grid-template-columns:repeat(2,1fr)}.grid--3{grid-template-columns:repeat(3,1fr)}.grid--4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--b);border-radius:var(--r);padding:24px;transition:all .25s}
+.card:hover{box-shadow:var(--s2);transform:translateY(-2px);border-color:#cbd5e1}
+.card__title{font-size:17px;font-weight:700;color:var(--d);margin-bottom:8px}
+.card__desc{font-size:14px;color:var(--m);margin-bottom:16px}
+.card__meta{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid var(--b);font-size:14px}
+.card__link{color:var(--p);font-weight:600;font-size:13px}
+.feature{display:flex;gap:16px;align-items:flex-start}
+.feature__icon{width:44px;height:44px;border-radius:10px;background:var(--pl);color:var(--p);display:grid;place-items:center;font-size:20px;flex-shrink:0;font-weight:700}
+.feature h3{font-size:16px;margin-bottom:6px}.feature p{font-size:14px;color:var(--m);margin:0}
+.stat-num{font-size:36px;font-weight:800;color:var(--p);margin-bottom:4px}
+.stat-label{color:var(--m);font-size:14px}
+.page-header{background:var(--bg);padding:48px 0;border-bottom:1px solid var(--b)}
+.page-header h1{margin-bottom:8px}.page-header p{color:var(--m);font-size:16px;max-width:720px}
+.crumbs{font-size:13px;color:var(--m);padding:20px 0 0}.crumbs a:hover{color:var(--p)}.crumbs span{margin:0 6px}
+.cta-block{background:linear-gradient(135deg,var(--p),var(--ph));border-radius:16px;padding:48px;color:#fff;text-align:center}
+.cta-block h2{color:#fff;margin-bottom:12px}.cta-block p{color:rgba(255,255,255,.85);margin-bottom:28px;font-size:16px}
+.footer{background:var(--d);color:rgba(255,255,255,.7);padding:56px 0 24px}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.footer h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:16px;text-transform:uppercase;letter-spacing:.5px}
+.footer .logo{color:#fff;margin-bottom:14px}.footer .logo__text small{color:rgba(255,255,255,.5)}
+.footer p{font-size:14px;margin:0}.footer ul li{margin-bottom:10px;font-size:14px}.footer a:hover{color:var(--a)}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.footer__bottom a{text-decoration:underline}
+.fab{position:fixed;bottom:24px;right:24px;z-index:900;background:var(--a);color:#fff;padding:14px 22px;border-radius:50px;font-weight:700;font-size:14px;box-shadow:0 8px 24px rgba(245,158,11,.4);display:flex;align-items:center;gap:8px;transition:all .2s}
+.fab:hover{background:var(--ah);transform:translateY(-2px);color:#fff}
+@media (max-width:1024px){.nav,.header__phone,.header__actions .btn{display:none}.burger{display:block}.grid--3,.grid--4{grid-template-columns:repeat(2,1fr)}.footer__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.section{padding:48px 0}.grid--2,.grid--3,.grid--4{grid-template-columns:1fr}.footer__grid{grid-template-columns:1fr}.cta-block{padding:32px 24px}.fab{right:16px;bottom:16px;padding:12px 18px;font-size:13px}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo"><div class="logo__mark">СБ</div><div class="logo__text">СБ-Групп<small>Слаботочные системы</small></div></a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Главная</a>
+      <div class="nav__dropdown"><span class="nav__link">Слаботочные системы ▾</span>
+        <div class="nav__dropdown-menu"><a href="slabotochnye.html">Что такое слаботочные системы</a><a href="slabotochnye.html#vidy">Какие бывают</a><a href="uslugi.html">Каталог услуг</a></div>
+      </div>
+      <a href="o-kompanii.html" class="nav__link active">О компании</a>
+      <a href="o-kompanii.html#pochemu" class="nav__link">Почему мы</a>
+      <a href="kontakty.html" class="nav__link">Контакты</a>
+      <a href="obratnaya-svyaz.html" class="nav__link">Обратная связь</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+      <a href="obratnaya-svyaz.html" class="btn btn--primary">Получить консультацию</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Главная</a>
+  <div class="nav__toggle" data-toggle>Слаботочные системы ▾</div>
+  <div class="mobile-nav__sub"><a href="slabotochnye.html">Что такое</a><a href="slabotochnye.html#vidy">Какие бывают</a><a href="uslugi.html">Каталог услуг</a></div>
+  <a href="o-kompanii.html">О компании</a><a href="o-kompanii.html#pochemu">Почему мы</a><a href="kontakty.html">Контакты</a><a href="obratnaya-svyaz.html">Обратная связь</a>
+  <a href="obratnaya-svyaz.html" class="btn btn--accent btn--lg">Получить консультацию</a>
+</div>
+
+<main>
+<div class="page-header"><div class="container">
+  <div class="crumbs"><a href="index.html">Главная</a><span>/</span>О компании</div>
+  <h1>О компании СБ-Групп</h1>
+</div></div>
+
+<section class="section"><div class="container">
+  <p>«СБ-Групп» — команда инженеров и монтажников, которая с 2014 года проектирует, монтирует и обслуживает слаботочные системы для бизнеса и частных клиентов. За это время мы сдали более 450 объектов: офисы, склады, магазины, коттеджи и производства.</p>
+  <p>Мы работаем по договору, делаем проект и смету до начала работ и сопровождаем объект после сдачи. Наша задача — чтобы системы работали стабильно, а клиент понимал, за что платит.</p>
+
+  <div class="grid grid--4" style="margin-top:32px">
+    <div class="card text-center"><div class="stat-num">10+</div><div class="stat-label">лет на рынке</div></div>
+    <div class="card text-center"><div class="stat-num">450+</div><div class="stat-label">объектов сдано</div></div>
+    <div class="card text-center"><div class="stat-num">24 мес.</div><div class="stat-label">гарантия</div></div>
+    <div class="card text-center"><div class="stat-num">18</div><div class="stat-label">специалистов</div></div>
+  </div>
+
+  <h2 style="margin-top:48px">Команда</h2>
+  <p>Руководитель, главный инженер, проектировщик, монтажные бригады, сервисная служба.</p>
+  <h2 style="margin-top:32px">Лицензии и сертификаты</h2>
+  <p>Лицензия МЧС, членство СРО, сертификаты производителей оборудования.</p>
+  <h2 style="margin-top:32px">География работ</h2>
+  <p>Москва и Московская область. Выезд по России — по договорённости.</p>
+</div></section>
+
+<section class="section section--alt" id="pochemu"><div class="container">
+  <div class="section__head"><h2>Почему стоит выбрать именно нас</h2><p>8 причин доверить объект нашей команде</p></div>
+  <div class="grid grid--2">
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Договор и прозрачная смета</h3><p>Фиксируем объём и стоимость до начала работ.</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Собственные инженеры и монтажники</h3><p>Не передаём объект «на подряд».</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Проект до монтажа</h3><p>Согласуем схему и оборудование до начала работ.</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Гарантия 24 месяца</h3><p>На все монтажные работы и оборудование.</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Сервисное обслуживание</h3><p>Сопровождаем объект после сдачи.</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Опыт 450+ объектов</h3><p>Работаем с коммерческими и частными клиентами.</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Лицензии и сертификаты</h3><p>Работаем по нормам и стандартам.</p></div></div>
+    <div class="feature"><div class="feature__icon">✓</div><div><h3>Бесплатный выезд инженера</h3><p>По Москве и области.</p></div></div>
+  </div>
+</div></section>
+
+<section class="section" id="portfolio"><div class="container">
+  <div class="section__head"><h2>Наши объекты</h2><p>Примеры выполненных работ</p></div>
+  <div class="grid grid--2">
+    <div class="card"><h3 class="card__title">Склад 2 400 м²</h3><p class="card__desc">Видеонаблюдение 32 камеры, СКУД на 4 входа.</p><div class="card__meta"><span class="card__link">Срок: 9 дней</span></div></div>
+    <div class="card"><h3 class="card__title">Офис 800 м²</h3><p class="card__desc">СКС на 120 портов, Wi-Fi, серверная.</p><div class="card__meta"><span class="card__link">Срок: 7 дней</span></div></div>
+    <div class="card"><h3 class="card__title">Магазин 350 м²</h3><p class="card__desc">Видеонаблюдение, ОПС, СОУЭ.</p><div class="card__meta"><span class="card__link">Срок: 5 дней</span></div></div>
+    <div class="card"><h3 class="card__title">Коттедж 350 м²</h3><p class="card__desc">ОПС, домофония, видеонаблюдение, Wi-Fi.</p><div class="card__meta"><span class="card__link">Срок: 6 дней</span></div></div>
+    <div class="card"><h3 class="card__title">Бизнес-центр</h3><p class="card__desc">СКУД на 12 точек, интеграция с 1С.</p></div>
+    <div class="card"><h3 class="card__title">Производство</h3><p class="card__desc">ОПС, СОУЭ, видеонаблюдение.</p></div>
+  </div>
+</div></section>
+
+<section class="section section--alt"><div class="container">
+  <div class="cta-block">
+    <h2>Готовы получить расчёт?</h2>
+    <p>Оставьте заявку — подготовим смету по вашему объекту.</p>
+    <a href="obratnaya-svyaz.html" class="btn btn--accent btn--lg">Получить расчёт</a>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div><div class="logo"><div class="logo__mark">СБ</div><div class="logo__text">СБ-Групп<small>Слаботочные системы</small></div></div><p>Проектирование, монтаж и обслуживание слаботочных систем для бизнеса и частных объектов с 2014 года.</p></div>
+    <div><h4>Меню</h4><ul><li><a href="index.html">Главная</a></li><li><a href="slabotochnye.html">Слаботочные системы</a></li><li><a href="o-kompanii.html">О компании</a></li><li><a href="o-kompanii.html#pochemu">Почему мы</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+    <div><h4>Услуги</h4><ul><li><a href="uslugi.html">Видеонаблюдение</a></li><li><a href="uslugi.html">СКУД</a></li><li><a href="uslugi.html">СКС</a></li><li><a href="uslugi.html">ОПС</a></li><li><a href="uslugi.html">Домофония</a></li></ul></div>
+    <div><h4>Контакты</h4><ul><li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li><li><a href="mailto:info@sb-group.ru">info@sb-group.ru</a></li><li>г. Москва, ул. Примерная, 10</li><li>пн–пт 9:00–19:00</li></ul></div>
+  </div>
+  <div class="footer__bottom"><span>© 2025 СБ-Групп. Все права защищены.</span><a href="kontakty.html#policy">Политика конфиденциальности</a></div>
+</div></footer>
+<a href="obratnaya-svyaz.html" class="fab">📞 Заказать звонок</a>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mobileNav').classList.toggle('open');document.body.style.overflow=this.classList.contains('open')?'hidden':''});
+document.querySelectorAll('.mobile-nav [data-toggle]').forEach(t=>t.addEventListener('click',()=>{const n=t.nextElementSibling;if(n)n.classList.toggle('open')}));
+</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог услуг по слаботочным системам | СБ-Групп</title>
+<meta name="description" content="Каталог услуг: видеонаблюдение, СКУД, СКС, ОПС, домофония, локальные сети. Цены, сроки, состав работ.">
+<style>
+:root{--p:#1257d6;--ph:#0d47b3;--pl:#e8efff;--a:#f59e0b;--ah:#d97706;--d:#0f172a;--t:#334155;--m:#64748b;--b:#e2e8f0;--bg:#f8fafc;--r:12px;--s1:0 1px 3px rgba(15,23,42,.08);--s2:0 4px 16px rgba(15,23,42,.08);--s3:0 10px 40px rgba(15,23,42,.12);--c:1200px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--t);background:#fff;line-height:1.6;padding-top:72px}
+h1,h2,h3,h4{color:var(--d);line-height:1.25;font-weight:700}
+h1{font-size:clamp(28px,4vw,44px);margin-bottom:16px}h2{font-size:clamp(24px,3vw,34px);margin-bottom:12px}h3{font-size:20px;margin-bottom:8px}
+p{margin-bottom:12px}a{color:inherit;text-decoration:none;transition:color .2s}ul{list-style:none}
+.container{max-width:var(--c);margin:0 auto;padding:0 20px}
+.section{padding:72px 0}.section--alt{background:var(--bg)}
+.section__head{max-width:760px;margin-bottom:40px}.section__head p{color:var(--m);font-size:17px}
+.text-center{text-align:center}
+.header{position:fixed;top:0;left:0;right:0;background:#fff;box-shadow:var(--s1);z-index:1000}
+.header__inner{display:flex;align-items:center;gap:24px;height:72px;max-width:var(--c);margin:0 auto;padding:0 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--d);flex-shrink:0}
+.logo__mark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--p),var(--ph));display:grid;place-items:center;color:#fff;font-size:16px;font-weight:800}
+.logo__text small{display:block;font-size:11px;color:var(--m);font-weight:500;letter-spacing:.3px;text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:2px;flex:1}
+.nav__link{padding:8px 12px;border-radius:8px;font-weight:500;font-size:14px;color:var(--t);white-space:nowrap;cursor:pointer}
+.nav__link:hover,.nav__link.active{background:var(--pl);color:var(--p)}
+.nav__dropdown{position:relative}.nav__dropdown::after{content:"";position:absolute;top:100%;left:0;right:0;height:8px}
+.nav__dropdown-menu{position:absolute;top:calc(100% + 6px);left:0;min-width:280px;background:#fff;border-radius:12px;box-shadow:var(--s3);padding:8px;display:none;flex-direction:column;gap:2px;border:1px solid var(--b)}
+.nav__dropdown:hover .nav__dropdown-menu{display:flex}
+.nav__dropdown-menu a{padding:9px 12px;border-radius:8px;font-size:14px;color:var(--t)}
+.nav__dropdown-menu a:hover{background:var(--pl);color:var(--p)}
+.header__actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.header__phone{font-weight:700;color:var(--d);font-size:15px;white-space:nowrap}.header__phone:hover{color:var(--p)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:600;font-size:14px;border:none;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:inherit}
+.btn--primary{background:var(--p);color:#fff}.btn--primary:hover{background:var(--ph)}
+.btn--accent{background:var(--a);color:#fff}.btn--accent:hover{background:var(--ah)}
+.btn--ghost{background:#fff;color:var(--p);border:1.5px solid var(--p)}.btn--ghost:hover{background:var(--pl)}
+.btn--lg{padding:14px 26px;font-size:15px}.btn--block{width:100%}
+.burger{display:none;width:44px;height:44px;border:none;background:var(--bg);border-radius:10px;cursor:pointer;position:relative;flex-shrink:0}
+.burger span,.burger::before,.burger::after{content:"";position:absolute;left:12px;right:12px;height:2px;background:var(--d);border-radius:2px;transition:all .3s}
+.burger::before{top:14px}.burger span{top:21px}.burger::after{top:28px}
+.burger.open::before{top:21px;transform:rotate(45deg)}.burger.open span{opacity:0}.burger.open::after{top:21px;transform:rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:#fff;padding:20px;overflow-y:auto;z-index:999}
+.mobile-nav.open{display:block}
+.mobile-nav a,.mobile-nav .nav__toggle{display:block;padding:14px 12px;font-size:16px;font-weight:500;border-radius:10px;color:var(--d);cursor:pointer}
+.mobile-nav a:hover,.mobile-nav .nav__toggle:hover{background:var(--pl);color:var(--p)}
+.mobile-nav__sub{display:none;padding-left:16px;margin-bottom:8px}.mobile-nav__sub.open{display:block}
+.mobile-nav__sub a{font-size:14px;color:var(--m);padding:10px 12px}
+.mobile-nav .btn{margin-top:16px;width:100%}
+.grid{display:grid;gap:20px}.grid--2{grid-template-columns:repeat(2,1fr)}.grid--3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--b);border-radius:var(--r);padding:24px;transition:all .25s}
+.card:hover{box-shadow:var(--s2);transform:translateY(-2px);border-color:#cbd5e1}
+.card__icon{width:48px;height:48px;border-radius:12px;background:var(--pl);color:var(--p);display:grid;place-items:center;font-size:22px;margin-bottom:16px;font-weight:700}
+.card__title{font-size:17px;font-weight:700;color:var(--d);margin-bottom:8px}
+.card__desc{font-size:14px;color:var(--m);margin-bottom:16px}
+.card__meta{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid var(--b);font-size:14px}
+.card__price{font-weight:700;color:var(--p);font-size:16px}
+.card__link{color:var(--p);font-weight:600;font-size:13px;background:none;border:none;cursor:pointer;font-family:inherit}
+.service-card{display:flex;flex-direction:column;height:100%}.service-card .card__desc{flex:1}
+.page-header{background:var(--bg);padding:48px 0;border-bottom:1px solid var(--b)}
+.page-header h1{margin-bottom:8px}.page-header p{color:var(--m);font-size:16px;max-width:720px}
+.crumbs{font-size:13px;color:var(--m);padding:20px 0 0}.crumbs a:hover{color:var(--p)}.crumbs span{margin:0 6px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.filter-btn{padding:9px 16px;border-radius:20px;background:#fff;border:1.5px solid var(--b);font-size:14px;font-weight:500;cursor:pointer;color:var(--t);font-family:inherit;transition:all .2s}
+.filter-btn:hover{border-color:var(--p);color:var(--p)}
+.filter-btn.active{background:var(--p);border-color:var(--p);color:#fff}
+.prices-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--s1)}
+.prices-table th,.prices-table td{padding:16px;text-align:left;border-bottom:1px solid var(--b);font-size:14px}
+.prices-table th{background:var(--bg);font-weight:700;color:var(--d);font-size:13px;text-transform:uppercase}
+.prices-table td:first-child{font-weight:600;color:var(--d)}
+.prices-table td:nth-child(2){font-weight:700;color:var(--p)}
+.prices-table tr:last-child td{border-bottom:none}
+.faq details{background:#fff;border:1px solid var(--b);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.faq details[open]{border-color:var(--p)}
+.faq summary{padding:18px 22px;font-weight:600;color:var(--d);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--p);font-weight:400;line-height:1}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq__body{padding:0 22px 18px;color:var(--t);font-size:15px}
+.form{max-width:560px;margin:0 auto;background:#fff;border-radius:16px;padding:32px;box-shadow:var(--s2);border:1px solid var(--b)}
+.form__row{margin-bottom:16px}
+.form label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--d)}
+.form label .req{color:#dc2626}
+.form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1.5px solid var(--b);border-radius:10px;font-size:15px;font-family:inherit;color:var(--d);background:#fff;transition:border-color .2s}
+.form input:focus,.form textarea:focus,.form select:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 3px var(--pl)}
+.form textarea{resize:vertical;min-height:100px}
+.form__check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--m);margin:16px 0;font-weight:400}
+.form__check input{width:auto;margin-top:3px;flex-shrink:0}
+.form__check a{color:var(--p);text-decoration:underline}
+.modal{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:2000;padding:20px;overflow-y:auto}
+.modal.open{display:block}
+.modal__inner{background:#fff;border-radius:16px;max-width:900px;margin:40px auto;padding:32px;position:relative}
+.modal__close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;border:none;background:var(--bg);font-size:20px;cursor:pointer;color:var(--d);display:grid;place-items:center}
+.modal__close:hover{background:#fee2e2;color:#dc2626}
+.modal h2{margin-bottom:12px;padding-right:40px}
+.modal__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+.modal__grid h3{margin-top:16px;margin-bottom:8px}
+.modal__grid ul li{padding:6px 0;font-size:14px}
+.thanks{text-align:center;padding:80px 0}
+.thanks__icon{width:80px;height:80px;border-radius:50%;background:#d1fae5;color:#059669;display:grid;place-items:center;font-size:40px;margin:0 auto 24px}
+.thanks h1{color:#059669}
+.thanks__actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.footer{background:var(--d);color:rgba(255,255,255,.7);padding:56px 0 24px}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.footer h4{color:#fff;font-size:14px;font-weight:700;margin-bottom:16px;text-transform:uppercase;letter-spacing:.5px}
+.footer .logo{color:#fff;margin-bottom:14px}.footer .logo__text small{color:rgba(255,255,255,.5)}
+.footer p{font-size:14px;margin:0}.footer ul li{margin-bottom:10px;font-size:14px}.footer a:hover{color:var(--a)}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.footer__bottom a{text-decoration:underline}
+.fab{position:fixed;bottom:24px;right:24px;z-index:900;background:var(--a);color:#fff;padding:14px 22px;border-radius:50px;font-weight:700;font-size:14px;box-shadow:0 8px 24px rgba(245,158,11,.4);display:flex;align-items:center;gap:8px;transition:all .2s}
+.fab:hover{background:var(--ah);transform:translateY(-2px);color:#fff}
+@media (max-width:1024px){.nav,.header__phone,.header__actions .btn{display:none}.burger{display:block}.grid--3{grid-template-columns:repeat(2,1fr)}.footer__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.section{padding:48px 0}.grid--2,.grid--3{grid-template-columns:1fr}.modal__grid{grid-template-columns:1fr}.footer__grid{grid-template-columns:1fr}.form{padding:20px}.modal__inner{padding:24px}.fab{right:16px;bottom:16px;padding:12px 18px;font-size:13px}.prices-table th,.prices-table td{padding:12px 10px;font-size:13px}}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo"><div class="logo__mark">СБ</div><div class="logo__text">СБ-Групп<small>Слаботочные системы</small></div></a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Главная</a>
+      <div class="nav__dropdown"><span class="nav__link active">Слаботочные системы ▾</span>
+        <div class="nav__dropdown-menu">
+          <a href="slabotochnye.html">Что такое слаботочные системы</a>
+          <a href="slabotochnye.html#vidy">Какие бывают слаботочные системы</a>
+          <a href="uslugi.html">Каталог услуг</a>
+        </div>
+      </div>
+      <a href="o-kompanii.html" class="nav__link">О компании</a>
+      <a href="o-kompanii.html#pochemu" class="nav__link">Почему мы</a>
+      <a href="kontakty.html" class="nav__link">Контакты</a>
+      <a href="obratnaya-svyaz.html" class="nav__link">Обратная связь</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+      <a href="obratnaya-svyaz.html" class="btn btn--primary">Получить консультацию</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Главная</a>
+  <div class="nav__toggle" data-toggle>Слаботочные системы ▾</div>
+  <div class="mobile-nav__sub"><a href="slabotochnye.html">Что такое</a><a href="slabotochnye.html#vidy">Какие бывают</a><a href="uslugi.html">Каталог услуг</a></div>
+  <a href="o-kompanii.html">О компании</a><a href="o-kompanii.html#pochemu">Почему мы</a><a href="kontakty.html">Контакты</a><a href="obratnaya-svyaz.html">Обратная связь</a>
+  <a href="obratnaya-svyaz.html" class="btn btn--accent btn--lg">Получить консультацию</a>
+</div>
+
+<main>
+<div class="page-header"><div class="container">
+  <div class="crumbs"><a href="index.html">Главная</a><span>/</span>Каталог услуг</div>
+  <h1>Каталог услуг</h1>
+  <p>Проектирование и монтаж слаботочных систем с фиксированной ценой «от»</p>
+</div></div>
+
+<section class="section"><div class="container">
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">Все</button>
+    <button class="filter-btn" data-filter="security">Безопасность</button>
+    <button class="filter-btn" data-filter="network">Сеть</button>
+    <button class="filter-btn" data-filter="access">Доступ</button>
+  </div>
+  <div class="grid grid--3" id="servicesGrid">
+
+    <div data-category="security"><div class="card service-card"><div class="card__icon">📹</div><div class="card__title">Видеонаблюдение</div><div class="card__desc">Контроль территории и помещений, запись и удалённый доступ.</div><div class="card__meta"><span class="card__price">от 15 000 ₽</span><button class="card__link" data-service="video">Подробнее →</button></div></div></div>
+
+    <div data-category="access"><div class="card service-card"><div class="card__icon">🔑</div><div class="card__title">СКУД</div><div class="card__desc">Контроль и управление доступом сотрудников и посетителей.</div><div class="card__meta"><span class="card__price">от 25 000 ₽</span><button class="card__link" data-service="skud">Подробнее →</button></div></div></div>
+
+    <div data-category="network"><div class="card service-card"><div class="card__icon">🖧</div><div class="card__title">СКС</div><div class="card__desc">Кабельные сети для интернета, телефонии и передачи данных.</div><div class="card__meta"><span class="card__price">от 20 000 ₽</span><button class="card__link" data-service="sks">Подробнее →</button></div></div></div>
+
+    <div data-category="security"><div class="card service-card"><div class="card__icon">🚨</div><div class="card__title">ОПС</div><div class="card__desc">Обнаружение пожара и проникновения, вывод на пульт.</div><div class="card__meta"><span class="card__price">от 30 000 ₽</span><button class="card__link" data-service="ops">Подробнее →</button></div></div></div>
+
+    <div data-category="security"><div class="card service-card"><div class="card__icon">📢</div><div class="card__title">СОУЭ</div><div class="card__desc">Звуковое и световое оповещение, управление эвакуацией.</div><div class="card__meta"><span class="card__price">от 20 000 ₽</span><button class="card__link" data-service="soue">Подробнее →</button></div></div></div>
+
+    <div data-category="access"><div class="card service-card"><div class="card__icon">🔔</div><div class="card__title">Домофония</div><div class="card__desc">Связь и контроль входа в дом или офис.</div><div class="card__meta"><span class="card__price">от 12 000 ₽</span><button class="card__link" data-service="domofoniya">Подробнее →</button></div></div></div>
+
+    <div data-category="network"><div class="card service-card"><div class="card__icon">📶</div><div class="card__title">Локальные сети и Wi-Fi</div><div class="card__desc">Интернет и сеть для офиса, склада, магазина и кафе.</div><div class="card__meta"><span class="card__price">от 18 000 ₽</span><button class="card__link" data-service="wifi">Подробнее →</button></div></div></div>
+
+    <div data-category="network"><div class="card service-card"><div class="card__icon">⚙️</div><div class="card__title">Диспетчеризация</div><div class="card__desc">Мониторинг и удалённое управление инженерными системами.</div><div class="card__meta"><span class="card__price">от 35 000 ₽</span><button class="card__link" data-service="dispetcherizaciya">Подробнее →</button></div></div></div>
+
+  </div>
+</div></section>
+</main>
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal" id="modal"><div class="modal__inner">
+  <button class="modal__close" id="modalClose">×</button>
+  <div id="modalBody"></div>
+</div></div>
+
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div><div class="logo"><div class="logo__mark">СБ</div><div class="logo__text">СБ-Групп<small>Слаботочные системы</small></div></div><p>Проектирование, монтаж и обслуживание слаботочных систем для бизнеса и частных объектов с 2014 года.</p></div>
+    <div><h4>Меню</h4><ul><li><a href="index.html">Главная</a></li><li><a href="slabotochnye.html">Слаботочные системы</a></li><li><a href="o-kompanii.html">О компании</a></li><li><a href="o-kompanii.html#pochemu">Почему мы</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+    <div><h4>Услуги</h4><ul><li><a href="uslugi.html">Видеонаблюдение</a></li><li><a href="uslugi.html">СКУД</a></li><li><a href="uslugi.html">СКС</a></li><li><a href="uslugi.html">ОПС</a></li><li><a href="uslugi.html">Домофония</a></li></ul></div>
+    <div><h4>Контакты</h4><ul><li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li><li><a href="mailto:info@sb-group.ru">info@sb-group.ru</a></li><li>г. Москва, ул. Примерная, 10</li><li>пн–пт 9:00–19:00</li></ul></div>
+  </div>
+  <div class="footer__bottom"><span>© 2025 СБ-Групп. Все права защищены.</span><a href="kontakty.html#policy">Политика конфиденциальности</a></div>
+</div></footer>
+<a href="obratnaya-svyaz.html" class="fab">📞 Заказать звонок</a>
+
+<script>
+const SERVICES = {
+  video:{name:'Видеонаблюдение',audience:'офисы, склады, магазины, коттеджи, производства',term:'1–5 дней',
+    includes:['Обследование объекта','Проект и схема размещения камер','Подбор оборудования (IP или аналог)','Монтаж кабельных линий','Установка камер и регистратора','Настройка записи и удалённого доступа','Пусконаладка и обучение персонала'],
+    prices:[['2 камеры','от 15 000 ₽'],['4 камеры','от 28 000 ₽'],['8 камер','от 55 000 ₽']],
+    faq:[['Можно ли смотреть с телефона?','Да, настраиваем удалённый доступ через мобильное приложение.'],['Сколько хранится запись?','Зависит от диска — обычно 7–30 дней.'],['Работаете с оборудованием заказчика?','Да, монтируем на оборудовании заказчика.']]},
+  skud:{name:'СКУД',audience:'офисы, бизнес-центры, склады, производства, коттеджи',term:'2–7 дней',
+    includes:['Аудит доступа','Проект системы','Монтаж контроллеров и считывателей','Установка замков и турникетов','Настройка прав и учётных записей','Интеграция с видеонаблюдением','Обучение персонала'],
+    prices:[['1 точка доступа','от 25 000 ₽'],['3 точки','от 60 000 ₽'],['5+ точек','по проекту']],
+    faq:[['Можно интегрировать с 1С?','Да, делаем интеграцию с 1С:ЗУП.'],['Есть ли биометрия?','Да, устанавливаем считыватели лица и отпечатка.']]},
+  sks:{name:'СКС',audience:'офисы, бизнес-центры, склады, производства',term:'2–10 дней',
+    includes:['Проект и схемы','Прокладка кабеля','Установка розеток и патч-панелей','Монтаж стоек и коммутаторов','Маркировка линий','Тестирование и сертификация','Сдача документации'],
+    prices:[['10 портов','от 20 000 ₽'],['30 портов','от 50 000 ₽'],['60+ портов','по проекту']],
+    faq:[['Делаете сертификацию линий?','Да, тестируем и выдаём протоколы.']]},
+  ops:{name:'ОПС',audience:'офисы, магазины, склады, коттеджи, производства',term:'3–10 дней',
+    includes:['Проект по нормам','Монтаж датчиков и панелей','Установка оповещателей','Вывод на пульт охраны','Настройка и пусконаладка','Приёмка и документация'],
+    prices:[['до 200 м²','от 30 000 ₽'],['200–500 м²','от 60 000 ₽'],['500+ м²','по проекту']],
+    faq:[['Соответствует нормам?','Да, проект и монтаж по СП 484 и ППР.'],['Можно интегрировать с СКУД?','Да, при срабатывании автоматически разблокируются двери.']]},
+  soue:{name:'СОУЭ',audience:'офисы, ТЦ, школы, склады, производства',term:'2–7 дней',
+    includes:['Проект по нормам','Монтаж оборудования','Настройка звука и света','Приёмка и сдача документации'],
+    prices:[['базовый комплект','от 20 000 ₽'],['расширенный','по проекту']],
+    faq:[['Нужен ли проект?','Да, для объектов с массовым пребыванием людей — обязательно.']]},
+  domofoniya:{name:'Домофония',audience:'коттеджи, многоквартирные дома, офисы',term:'1–3 дня',
+    includes:['Подбор оборудования','Монтаж вызывной панели','Установка замка','Настройка и интеграция с телефоном'],
+    prices:[['аудиодомофон','от 12 000 ₽'],['видеодомофон','от 18 000 ₽'],['многоквартирный','по проекту']],
+    faq:[['Можно вывести вызов на телефон?','Да, через SIP или мобильное приложение.']]},
+  wifi:{name:'Локальные сети и Wi-Fi',audience:'офисы, склады, магазины, кафе',term:'2–7 дней',
+    includes:['Проект сети','Прокладка кабеля','Установка коммутаторов','Монтаж точек доступа','Настройка сети и безопасности','Тестирование'],
+    prices:[['малый офис','от 18 000 ₽'],['средний офис','от 40 000 ₽'],['склад/производство','по проекту']],
+    faq:[['Делаете бесшовный Wi-Fi?','Да, настраиваем roaming между точками доступа.']]},
+  dispetcherizaciya:{name:'Диспетчеризация',audience:'бизнес-центры, коттеджи, производства, склады',term:'5–14 дней',
+    includes:['Аудит инженерных систем','Проект','Монтаж контроллеров','Настройка мониторинга','Интеграция с другими системами'],
+    prices:[['коттедж','от 35 000 ₽'],['коммерческий объект','по проекту']],
+    faq:[['Можно управлять со смартфона?','Да, через приложение или web-интерфейс.']]},
+};
+
+function openService(key){
+  const s=SERVICES[key];
+  if(!s)return;
+  document.getElementById('modalBody').innerHTML=`
+    <h2>${s.name}</h2>
+    <p style="color:var(--m)">Кому подходит: ${s.audience}. Сроки: ${s.term}.</p>
+    <div class="modal__grid">
+      <div>
+        <h3>Что входит в услугу</h3>
+        <ul>${s.includes.map(i=>`<li>✓ ${i}</li>`).join('')}</ul>
+        <h3>Цены</h3>
+        <table class="prices-table"><tbody>${s.prices.map(([n,p])=>`<tr><td>${n}</td><td>${p}</td></tr>`).join('')}</tbody></table>
+      </div>
+      <div>
+        <h3>Оставить заявку</h3>
+        <form class="form" data-thanks style="box-shadow:none;border:none;padding:0;margin-top:8px">
+          <div class="form__row"><label>Имя <span class="req">*</span></label><input type="text" name="name" required placeholder="Ваше имя"></div>
+          <div class="form__row"><label>Телефон <span class="req">*</span></label><input type="tel" name="phone" required placeholder="+7 (___) ___-__-__"></div>
+          <div class="form__row"><label>Комментарий</label><textarea name="comment" placeholder="Кратко опишите задачу"></textarea></div>
+          <label class="form__check"><input type="checkbox" required><span>Согласен с <a href="kontakty.html#policy">политикой конфиденциальности</a></span></label>
+          <button type="submit" class="btn btn--accent btn--lg btn--block">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+    <h3 style="margin-top:24px">Частые вопросы</h3>
+    <div class="faq" style="margin-top:12px">${s.faq.map(([q,a])=>`<details><summary>${q}</summary><div class="faq__body">${a}</div></details>`).join('')}</div>`;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+document.querySelectorAll('[data-service]').forEach(b=>b.addEventListener('click',()=>openService(b.dataset.service)));
+document.getElementById('modalClose').addEventListener('click',()=>{document.getElementById('modal').classList.remove('open');document.body.style.overflow=''});
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal'){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}});
+
+document.getElementById('burger').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mobileNav').classList.toggle('open');document.body.style.overflow=this.classList.contains('open')?'hidden':''});
+document.querySelectorAll('.mobile-nav [data-toggle]').forEach(t=>t.addEventListener('click',()=>{const n=t.nextElementSibling;if(n)n.classList.toggle('open')}));
+
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f=btn.dataset.filter;
+  document.querySelectorAll('[data-category]').forEach(card=>{card.style.display=(f==='all'||card.dataset.category===f)?'':'none'});
+}));
+
+// Форма внутри модалки → показываем спасибо
+document.addEventListener('submit',e=>{
+  if(e.target.matches('form[data-thanks]')){
+    e.preventDefault();
+    const s = e.target.closest('.modal');
+    const nameField = e.target.querySelector('input[name="name"]');
+    const name = nameField ? nameField.value : '';
+    if(s){
+      s.querySelector('.modal__inner').innerHTML = `<button class="modal__close" id="modalClose2">×</button>
+        <div class="thanks"><div class="thanks__icon">✓</div><h1>Спасибо, ${name}!</h1>
+        <p>Заявка получена. Мы свяжемся с вами в течение 15 минут в рабочее время.</p>
+        <div class="thanks__actions"><a href="index.html" class="btn btn--ghost btn--lg">На главную</a><a href="obratnaya-svyaz.html" class="btn btn--primary btn--lg">Оставить ещё заявку</a></div></div>`;
+      document.getElementById('modalClose2').addEventListener('click',()=>{s.classList.remove('open');document.body.style.overflow=''});
+    }
+  }
+});
+</script>
+</body>
+</html>
